@@ -1,0 +1,102 @@
+*{
+    margin : 0;
+    border: 0;
+    font-family: 'Space Mono', monospace;
+
+}
+h4{
+    color : white;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+.headerpic {
+    background: url("pattern.png");
+    margin: 0;
+    height : 172px;
+}
+input{
+     border-radius: 10px;
+     height: 25px;
+     width: 400px; 
+     margin-left: 34%;
+     padding-left: 9px;
+     padding-top: 4px;
+     padding-bottom: 4px;
+     font-size: x-small;
+     border: none;
+     outline: 0;
+}
+form{
+    display: flex;
+    flex-display: row;
+    width: 430px;
+    padding-left: 26%;
+}
+#submitSearch{
+    background-color: black;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -20px;
+}
+#map { 
+    margin-top: 0;
+    height : 450px;
+    z-index: 0;
+    overflow: hidden;
+}
+#box{
+    background-color: white;
+    height: 90px;
+    width: 500px;
+    margin-left: 30%;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    padding-left: -9px;
+    padding-top: 12px;
+    padding-bottom : 12px;
+    padding-right: 5px;
+    
+    
+}
+.box-content{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    font-size: x-small;
+}
+.id-group{
+    margin-left: 30px;
+}
+.borderline{
+    border: 15px bold black;
+}
+@media(max-width: 768px) {
+    #box{
+        height: 200px;
+        margin-left: 100px;
+        width: 150px;
+        margin-right: 10px;
+        top: 60%;
+        left : 29%;
+    }
+     .box-content{
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        width: 130px;
+        font-size: x-small;
+    
+
+    }
+    #map{
+        height: 77vh;
+    }
+    .map-form{
+        width: 400px;
+        margin-left: -170px;
+    }
+}

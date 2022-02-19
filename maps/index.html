@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head> 
+<body>
+    <div class="headerpic">
+        <h4>IP Address Tracker</h4>
+        <br>
+        <form action="" class="map-form">
+        <input type="text" id ="inputaddresses" placeholder="Search for any IP address or domain">
+        <button type="submit" id = "submitSearch">></button>
+        </form>
+        <br>
+        <div id = "box">
+            <div class="box-content">
+            <div class="id-group">
+                <h6>IP Address</h6>
+                <br>
+                <h3 id = "inputaddress">192.212.174.101</h3>
+            </div>
+            <div class="borderline"></div>
+            <div class="id-group">
+                <h6>Location</h6>
+                <br>
+                <h3 id = "locale">Brooklyn , NY 10001</h3>
+            </div>
+            <div class="borderline"></div>
+            <div class="id-group">
+             <h6 >Timezone</h6>
+             <br>
+             <h3 id = "timezone">UTC -5:00</h3>
+            </div>
+            <div class="borderline"></div>
+            <div class="id-group">
+                <h6>ISP</h6>
+                <br>
+                <h3 id = "isp">SpaceX Starlink</h3>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id = "map"></div>
+    
+    <script src="tola.js"></script>
+   
+</body>
+</html>
